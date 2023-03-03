@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculateMauiApp.MainPage" WidthRequest="360" HeightRequest="400">
+
+    <ScrollView Background="LightGray" Margin="-36">
+        <VerticalStackLayout Margin="0, 10, 0, 0">
+            <Label Text="0" x:Name="txtCalc" FontSize="50" FontAttributes="Bold" HorizontalOptions="End" TextColor="Black" Margin="0, 0, 35, 5" WidthRequest="360" HorizontalTextAlignment="End"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="MC" FontSize="18" TextColor="Gray"/>
+                <Label Text="MR" FontSize="18" TextColor="Gray" Margin="35, 0, 35, 0"/>
+                <Label Text="M+" FontSize="18" TextColor="Black"/>
+                <Label Text="M-" FontSize="18" TextColor="Black" Margin="35, 0, 35, 0"/>
+                <Label Text="MS" FontSize="18" TextColor="Black"/>
+                <Label Text="Mv" FontSize="18" TextColor="Gray" Margin="35, 0, 0, 0"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 10, 0, 0">
+                <Button Text="%" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonProc_Clicked"/>
+                <Button Text="CE" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonClear_Clicked"/>
+                <Button Text="C" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonClear_Clicked"/>
+                <Button ImageSource="D:\Empty Folder\Учёба\МДК 01.03\ЛР1 Calculate\CalculateMauiApp\Resources\Images\delete.png" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonClearOne_Clicked"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 3, 0, 3">
+                <Button Text="1/x" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonOneDelenX_Clicked"/>
+                <Button Text="2" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonStep_Clicked"/>
+                <Button Text="√x" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonKor_Clicked"/>
+                <Button Text="÷" BackgroundColor="White" TextColor="Black" FontSize="25" HeightRequest="50" WidthRequest="90" Clicked="ButtonDelen_Clicked"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="7" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="8" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="9" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="✕" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonUmn_Clicked"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 3, 0, 3">
+                <Button Text="4" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="5" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="6" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="-" BackgroundColor="White" TextColor="Black" FontSize="30" HeightRequest="50" WidthRequest="90" Clicked="ButtonMinus_Clicked"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="1" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="2" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="3" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="+" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonPlus_Clicked"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 3, 0, 0">
+                <Button Text="±" BackgroundColor="White" TextColor="Black" FontSize="25" HeightRequest="50" WidthRequest="90" Clicked="ButtonPlusMinus_Clicked"/>
+                <Button Text="0" BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonNumbers_Clicked"/>
+                <Button Text="," BackgroundColor="White" TextColor="Black" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonZap_Clicked"/>
+                <Button Text="=" BackgroundColor="#4c5f6b" TextColor="White" FontSize="20" HeightRequest="50" WidthRequest="90" Clicked="ButtonRavno_Clicked"/>
+            </HorizontalStackLayout>
+            <Label Text="x" FontSize="15" TextColor="Black" Margin="180, -258, 0, 0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
